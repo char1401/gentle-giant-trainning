@@ -1,22 +1,16 @@
 :root {
-  --navy-950: #08111c;
-  --navy-900: #102238;
-  --navy-800: #183552;
-  --navy-700: #23486e;
-  --sand-100: #f6f0e4;
-  --sand-200: #ebdec0;
-  --gold-400: #d5b36a;
-  --gold-500: #c79a3d;
-  --gold-600: #a97c28;
-  --rust-500: #b95632;
+  --primary: #182a3a;
+  --secondary: #425b6f;
+  --accent: #d6bb80;
+  --accent-dark: #a08348;
   --white: #ffffff;
   --ink: #15263a;
   --muted: #5b6878;
-  --surface: #fffdfa;
+  --surface: #f8f8f6;
   --surface-strong: #f4efe4;
-  --border: rgba(16, 34, 56, 0.12);
-  --shadow-soft: 0 20px 50px rgba(8, 17, 28, 0.12);
-  --shadow-card: 0 16px 36px rgba(8, 17, 28, 0.1);
+  --border: rgba(24, 42, 58, 0.16);
+  --shadow-soft: 0 20px 50px rgba(24, 42, 58, 0.14);
+  --shadow-card: 0 16px 36px rgba(24, 42, 58, 0.1);
   --radius-sm: 0.85rem;
   --radius-md: 1.4rem;
   --radius-lg: 2rem;
@@ -36,9 +30,7 @@ html {
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
-  background:
-    radial-gradient(circle at top, rgba(213, 179, 106, 0.22), transparent 32%),
-    linear-gradient(180deg, #fcfaf4 0%, #f3ede2 100%);
+  background: var(--primary);
   color: var(--ink);
   line-height: 1.6;
 }
@@ -64,11 +56,11 @@ a {
 }
 
 a:hover {
-  color: var(--gold-600);
+  color: var(--accent-dark);
 }
 
 :focus-visible {
-  outline: 3px solid var(--rust-500);
+  outline: 3px solid var(--accent-dark);
   outline-offset: 3px;
 }
 
@@ -91,7 +83,7 @@ a:hover {
   z-index: 1000;
   padding: 0.8rem 1rem;
   background: var(--white);
-  color: var(--navy-900);
+  color: var(--primary);
   border-radius: 999px;
   text-decoration: none;
   box-shadow: var(--shadow-soft);
@@ -105,7 +97,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(8, 17, 28, 0.82);
+  background: rgba(24, 42, 58, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -204,7 +196,7 @@ a:hover {
   right: 0;
   display: none;
   padding: 0.6rem 1rem 1rem;
-  background: rgba(8, 17, 28, 0.96);
+  background: rgba(24, 42, 58, 0.98);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -236,17 +228,15 @@ a:hover {
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--navy-950);
-  background: linear-gradient(135deg, var(--gold-400), var(--sand-200));
+  color: var(--primary);
+  background: var(--accent);
   font-weight: 800;
 }
 
 .hero,
 .hero-banner,
 .band-accent {
-  background:
-    linear-gradient(135deg, rgba(213, 179, 106, 0.96), rgba(246, 240, 228, 0.98)),
-    var(--sand-100);
+  background: var(--accent);
 }
 
 .hero {
@@ -260,7 +250,7 @@ a:hover {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 15% 15%, rgba(185, 86, 50, 0.2), transparent 18%),
+    radial-gradient(circle at 15% 15%, rgba(160, 131, 72, 0.18), transparent 18%),
     linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
     linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
   background-size: auto, 2.4rem 2.4rem, 2.4rem 2.4rem;
@@ -276,9 +266,7 @@ a:hover {
 }
 
 .band-dark {
-  background:
-    linear-gradient(180deg, rgba(16, 34, 56, 0.98), rgba(8, 17, 28, 0.98)),
-    var(--navy-900);
+  background: var(--secondary);
   color: var(--white);
 }
 
@@ -296,9 +284,7 @@ a:hover {
 }
 
 .footer {
-  background:
-    radial-gradient(circle at top, rgba(213, 179, 106, 0.12), transparent 22%),
-    var(--navy-950);
+  background: var(--primary);
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -313,12 +299,12 @@ a:hover {
   margin-bottom: 0.8rem;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: rgba(16, 34, 56, 0.08);
+  background: rgba(24, 42, 58, 0.08);
   font-size: 0.74rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--navy-800);
+  color: var(--secondary);
 }
 
 h1,
@@ -391,7 +377,7 @@ h3 {
 
 .band-accent .section-intro,
 .band-accent .section-title {
-  color: var(--navy-900);
+  color: var(--primary);
 }
 
 .band-accent p,
@@ -417,12 +403,12 @@ summary {
   padding: 0.92rem 1.4rem;
   border: 1px solid transparent;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--rust-500), #d0714d);
+  background: var(--secondary);
   color: var(--white);
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 0.02em;
-  box-shadow: 0 14px 28px rgba(185, 86, 50, 0.24);
+  box-shadow: 0 14px 28px rgba(24, 42, 58, 0.22);
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
 
@@ -430,13 +416,23 @@ summary {
 .button:focus-visible {
   color: var(--white);
   transform: translateY(-2px);
-  box-shadow: 0 18px 34px rgba(185, 86, 50, 0.3);
-  filter: saturate(1.05);
+  background: var(--primary);
+  box-shadow: 0 18px 34px rgba(24, 42, 58, 0.28);
+  filter: none;
 }
 
 .button-secondary {
-  background: linear-gradient(135deg, var(--navy-800), var(--navy-900));
-  box-shadow: 0 14px 28px rgba(16, 34, 56, 0.28);
+  background: var(--accent);
+  color: var(--primary);
+  border-color: rgba(24, 42, 58, 0.18);
+  box-shadow: 0 14px 28px rgba(160, 131, 72, 0.24);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  background: var(--accent-dark);
+  color: var(--white);
+  box-shadow: 0 18px 34px rgba(160, 131, 72, 0.28);
 }
 
 .card-grid,
@@ -495,8 +491,8 @@ summary {
   place-items: center;
   margin-bottom: 0.8rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(213, 179, 106, 0.24), rgba(185, 86, 50, 0.18));
-  color: var(--navy-900);
+  background: rgba(214, 187, 128, 0.24);
+  color: var(--accent-dark);
   font-size: 0.95rem;
   font-weight: 800;
 }
@@ -520,7 +516,7 @@ summary {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(2.5rem, 6vw, 3.7rem);
   line-height: 1;
-  color: var(--navy-900);
+  color: var(--primary);
 }
 
 .stat span {
@@ -540,7 +536,7 @@ summary {
   min-height: 19rem;
   padding: 0.55rem;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.22));
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: var(--shadow-soft);
 }
 
@@ -612,7 +608,7 @@ summary {
   justify-content: center;
   min-height: 4rem;
   border-radius: 1.1rem;
-  background: linear-gradient(135deg, var(--gold-500), var(--rust-500));
+  background: var(--primary);
   color: var(--white);
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.45rem;
@@ -674,8 +670,8 @@ summary {
 
 .pricing-card.featured {
   background: linear-gradient(180deg, rgba(255, 248, 232, 0.98), rgba(250, 238, 210, 0.98));
-  border-color: rgba(199, 154, 61, 0.38);
-  box-shadow: 0 20px 42px rgba(169, 124, 40, 0.18);
+  border-color: rgba(160, 131, 72, 0.45);
+  box-shadow: 0 20px 42px rgba(160, 131, 72, 0.18);
 }
 
 .price {
@@ -721,8 +717,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: rgba(185, 86, 50, 0.62);
-  box-shadow: 0 0 0 4px rgba(185, 86, 50, 0.14);
+  border-color: rgba(160, 131, 72, 0.62);
+  box-shadow: 0 0 0 4px rgba(160, 131, 72, 0.14);
   outline: none;
 }
 
