@@ -54,3 +54,23 @@ if (!prefersReducedMotion && 'IntersectionObserver' in window) {
   // If motion is reduced or the browser is older, everything just shows normally.
   revealElements.forEach((element) => element.classList.add('is-visible'));
 }
+
+const contactForm = document.querySelector('#contact-form');
+const formStatus = document.querySelector('#form-status');
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      formStatus.textContent = 'Please complete the required fields before submitting.';
+      formStatus.dataset.state = 'error';
+      contactForm.reportValidity();
+      return;
+    }
+
+    formStatus.textContent = 'Thanks for reaching out. Your message is ready for follow-up.';
+    formStatus.dataset.state = 'success';
+    contactForm.reset();
+  });
+}
