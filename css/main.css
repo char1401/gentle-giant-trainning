@@ -1,4 +1,39 @@
 :root {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< ours
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+  --primary: #182a3a;
+  --secondary: #425b6f;
+  --accent: #d6bb80;
+  --accent-dark: #a08348;
+=======
+  --navy-950: #08111c;
+  --navy-900: #102238;
+  --navy-800: #183552;
+  --navy-700: #23486e;
+  --sand-100: #f6f0e4;
+  --sand-200: #ebdec0;
+  --gold-400: #d5b36a;
+  --gold-500: #c79a3d;
+  --gold-600: #a97c28;
+  --rust-500: #b95632;
+>>>>>>> parent of 4a68dcb (fixes the colours)
+  --white: #ffffff;
+  --ink: #15263a;
+  --muted: #5b6878;
+  --surface: #fffdfa;
+  --surface-strong: #f4efe4;
+  --border: rgba(16, 34, 56, 0.12);
+  --shadow-soft: 0 20px 50px rgba(8, 17, 28, 0.12);
+  --shadow-card: 0 16px 36px rgba(8, 17, 28, 0.1);
+  --radius-sm: 0.85rem;
+  --radius-md: 1.4rem;
+  --radius-lg: 2rem;
+  --container: min(74rem, calc(100% - 2rem));
+=======
   /* I put the main site colours here so they are easier to reuse. */
   --primary: #182A3A;
   --secondary: #425B6F;
@@ -11,6 +46,7 @@
   --shadow: 0 12px 30px rgba(24, 42, 58, 0.14);
   --radius: 0.35rem;
   --container: min(92rem, calc(100% - 2rem));
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
 }
 
 *,
@@ -60,8 +96,23 @@ a:hover {
 }
 
 :focus-visible {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< ours
+=======
+  /* This makes keyboard focus easier to see. */
+>>>>>>> theirs
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+  outline: 3px solid var(--accent-dark);
+=======
+  outline: 3px solid var(--rust-500);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+=======
   /* This makes keyboard focus easier to see. */
   outline: 3px solid var(--accent-dark);
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
   outline-offset: 3px;
 }
 
@@ -213,6 +264,66 @@ a:hover {
 .hero,
 .hero-banner,
 .band-accent {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< ours
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+  background: var(--accent);
+=======
+  background:
+    linear-gradient(135deg, rgba(213, 179, 106, 0.96), rgba(246, 240, 228, 0.98)),
+    var(--sand-100);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0 3.2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(185, 86, 50, 0.2), transparent 18%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: auto, 2.4rem 2.4rem, 2.4rem 2.4rem;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent);
+  pointer-events: none;
+}
+
+.hero > .container,
+.section > .container,
+.footer > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.band-dark {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  /* Gold sections use the accent colour from the palette. */
+  background: var(--accent);
+}
+
+.band-dark {
+  /* Dark sections use the blue-gray colour. */
+>>>>>>> theirs
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+  background: var(--secondary);
+=======
+  background:
+    linear-gradient(180deg, rgba(16, 34, 56, 0.98), rgba(8, 17, 28, 0.98)),
+    var(--navy-900);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+=======
   /* Gold sections use the accent colour from the palette. */
   background: var(--accent);
 }
@@ -220,6 +331,7 @@ a:hover {
 .band-dark {
   /* Dark sections use the blue-gray colour. */
   background: var(--secondary);
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
   color: var(--white);
 }
 
@@ -237,6 +349,20 @@ a:hover {
 }
 
 .footer {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  background: var(--primary);
+<<<<<<< HEAD
+<<<<<<< ours
+=======
+  background:
+    radial-gradient(circle at top, rgba(213, 179, 106, 0.12), transparent 22%),
+    var(--navy-950);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+  color: rgba(255, 255, 255, 0.86);
+=======
   background: var(--primary);
   color: rgba(255, 255, 255, 0.85);
 }
@@ -244,6 +370,7 @@ a:hover {
 .hero {
   /* This is the main top section spacing. */
   padding: 2.75rem 0 2.25rem;
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
 }
 
 .hero-grid {
@@ -259,8 +386,28 @@ a:hover {
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
+<<<<<<< HEAD
+  letter-spacing: 0.18em;
+<<<<<<< HEAD
+  color: var(--secondary);
+<<<<<<< HEAD
+=======
+  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent-dark);
+>>>>>>> theirs
+=======
+  color: var(--navy-800);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+=======
+  letter-spacing: 0.12em;
+  color: var(--accent-dark);
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
 }
 
 h1,
@@ -358,6 +505,36 @@ summary {
 .button:focus-visible {
   background: var(--primary);
   color: var(--white);
+<<<<<<< HEAD
+  transform: translateY(-2px);
+<<<<<<< HEAD
+  background: var(--primary);
+  box-shadow: 0 18px 34px rgba(24, 42, 58, 0.28);
+  filter: none;
+}
+
+.button-secondary {
+  background: var(--accent);
+  color: var(--primary);
+  border-color: rgba(24, 42, 58, 0.18);
+  box-shadow: 0 14px 28px rgba(160, 131, 72, 0.24);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  background: var(--accent-dark);
+  color: var(--white);
+  box-shadow: 0 18px 34px rgba(160, 131, 72, 0.28);
+=======
+  box-shadow: 0 18px 34px rgba(185, 86, 50, 0.3);
+  filter: saturate(1.05);
+}
+
+.button-secondary {
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-900));
+  box-shadow: 0 14px 28px rgba(16, 34, 56, 0.28);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+=======
   transform: translateY(-1px);
 }
 
@@ -365,6 +542,7 @@ summary {
   background: var(--accent);
   color: var(--primary);
   border-color: rgba(24, 42, 58, 0.18);
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
 }
 
 .button-secondary:hover,
@@ -597,8 +775,26 @@ summary {
 }
 
 .pricing-card.featured {
+<<<<<<< HEAD
+  background: linear-gradient(180deg, rgba(255, 248, 232, 0.98), rgba(250, 238, 210, 0.98));
+<<<<<<< HEAD
+  border-color: rgba(160, 131, 72, 0.45);
+  box-shadow: 0 20px 42px rgba(160, 131, 72, 0.18);
+<<<<<<< HEAD
+=======
   border-color: rgba(160, 131, 72, 0.6);
   box-shadow: 0 10px 22px rgba(160, 131, 72, 0.18);
+>>>>>>> theirs
+=======
+  border-color: rgba(199, 154, 61, 0.38);
+  box-shadow: 0 20px 42px rgba(169, 124, 40, 0.18);
+>>>>>>> parent of 4a68dcb (fixes the colours)
+=======
+>>>>>>> parent of 662ee61 (undos the big mistake I made)
+=======
+  border-color: rgba(160, 131, 72, 0.6);
+  box-shadow: 0 10px 22px rgba(160, 131, 72, 0.18);
+>>>>>>> parent of 02c06d4 (fixes visuals and errors)
 }
 
 .price {
