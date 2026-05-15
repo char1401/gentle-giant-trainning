@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Gentle Giant Training</title>
+  <meta name="description" content="Learn about Gentle Giant Training, our coaching mission, staff, athlete development philosophy, and core values.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- This skip link is here so keyboard users do not have to tab through the whole menu. -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- This header is the same main navigation used across the website. -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Gentle Giant Training home">
+        <picture>
+          <source srcset="images/gentlegiantlogo-48.jpg 48w, images/gentlegiantlogo-96.jpg 96w" sizes="32px">
+          <img src="images/gentlegiantlogo-48.jpg" width="48" height="47" alt="Gentle Giant Training logo">
+        </picture>
+        <span>The Gentle Giant</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open site navigation">
+        <span class="menu-toggle-line" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-open="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a aria-current="page" href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- This hero uses the same text-and-image layout as the other main pages. -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <h1>About Us</h1>
+          <p class="lead">Founded by former Division I athletes, Gentle Giant Training exists to help football players build confidence, sharpen their game, and prepare for meaningful opportunities beyond high school.</p>
+        </div>
+        <div class="hero-media reveal">
+          <picture>
+            <!-- These image sizes help the browser load a better file for the screen size. -->
+            <source media="(max-width: 480px)" srcset="images/about-us-hero-360.jpg" sizes="calc(100vw - 2rem)">
+            <source media="(min-width: 481px)" srcset="images/about-us-hero-360.jpg 360w, images/about-us-hero-600.jpg 600w" sizes="(max-width: 768px) calc(100vw - 2rem), 44vw">
+            <img src="images/about-us-hero-600.jpg" width="600" height="336" alt="Football athletes walking toward the field from a tunnel before competition" fetchpriority="high">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- These cards explain the purpose of the business. -->
+    <section class="section band-dark">
+      <div class="container card-grid two-up">
+        <article class="card reveal">
+          <span class="icon-badge" aria-hidden="true">M</span>
+          <h2>Our Mission</h2>
+          <p>Develop complete athletes who are physically prepared, mentally disciplined, and ready to represent themselves well on the field, in the classroom, and in the recruiting process.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-badge" aria-hidden="true">V</span>
+          <h2>Our Vision</h2>
+          <p>Create a trusted football development program that equips hundreds of athletes with elite preparation, scholarship opportunities, and strong character.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- This is the coach section with responsive images for each coach. -->
+    <section class="section band-accent">
+      <div class="container">
+        <div class="section-centered reveal">
+          <h2>Meet Our Coaching Staff</h2>
+        </div>
+        <div class="coach-grid">
+          <article class="coach-card reveal">
+            <picture>
+              <source srcset="images/coach-1-96.jpg 96w, images/coach-1-160.jpg 160w" sizes="88px">
+              <img src="images/coach-1-160.jpg" width="160" height="112" alt="Head coach Michael Davis smiling in team gear" loading="lazy">
+            </picture>
+            <h3>Coach Michael Davis</h3>
+            <p>Head Coach</p>
+            <p>Former Ohio State linebacker with 8 years of NFL experience. Specializes in defensive development and recruitment strategy.</p>
+          </article>
+          <article class="coach-card reveal">
+            <picture>
+              <source srcset="images/coach-2-96.jpg 96w, images/coach-2-160.jpg 160w" sizes="88px">
+              <img src="images/coach-2-160.jpg" width="160" height="112" alt="Coach Sarah Martinez standing on the training field" loading="lazy">
+            </picture>
+            <h3>Coach Sarah Martinez</h3>
+            <p>Strength Coach</p>
+            <p>Former Division I quarterback coach with expertise in passing mechanics and offensive systems. 15 years coaching experience.</p>
+          </article>
+          <article class="coach-card reveal">
+            <picture>
+              <source srcset="images/coach-3-96.jpg 96w, images/coach-3-160.jpg 160w" sizes="88px">
+              <img src="images/coach-3-160.jpg" width="160" height="112" alt="Coach James Thompson leading a football drill session" loading="lazy">
+            </picture>
+            <h3>Coach James Thompson</h3>
+            <p>Skills Development</p>
+            <p>Certified strength coach with a background in sports science. Develops customized training programs for peak athletic performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- This timeline shows the history in order from oldest to newest. -->
+    <section class="section band-dark">
+      <div class="container">
+        <div class="section-centered reveal">
+          <h2 class="section-title">Our Journey</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2015</div>
+            <div class="timeline-body">
+              <h3>Founded</h3>
+              <p>Gentle Giant Training launched with a mission to mentor athletes through elite instruction and consistent accountability.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-body">
+              <h3>First 100 Athletes</h3>
+              <p>The program expanded quickly as more athletes and families looked for technical coaching with a personal approach.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2021</div>
+            <div class="timeline-body">
+              <h3>Facility Expansion</h3>
+              <p>Training space grew to support larger group sessions, off-season speed work, and position-specific development.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-body">
+              <h3>$10M in Scholarships</h3>
+              <p>Athletes from the program earned major scholarship opportunities through strong preparation and consistent guidance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- The blue stars are decorative icons for each core value. -->
+    <section class="section band-accent">
+      <div class="container">
+        <div class="section-centered reveal">
+          <h2>Our Core Values</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-item reveal">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
+            <strong>Opportunity</strong>
+            <p>Creating pathways to college football</p>
+          </div>
+          <div class="value-item reveal">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
+            <strong>Responsibility</strong>
+            <p>Developing leaders on and off the field</p>
+          </div>
+          <div class="value-item reveal">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
+            <strong>Discipline</strong>
+            <p>Building mental and physical toughness</p>
+          </div>
+          <div class="value-item reveal">
+            <picture>
+              <source srcset="images/blue-star-32.png 32w, images/blue-star-64.png 64w" sizes="32px">
+              <img class="value-icon" src="images/blue-star-32.png" width="32" height="32" alt="" aria-hidden="true" loading="lazy">
+            </picture>
+            <strong>Confidence</strong>
+            <p>Empowering athletes to reach their potential</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- This footer repeats useful links so visitors do not need to scroll back up. -->
+  <footer class="footer section-tight">
+    <div class="container footer-grid four-up">
+      <section>
+        <h2 class="visually-hidden">Company information</h2>
+        <h3>Gentle Giant Training</h3>
+        <p>Elite football training and recruitment support for committed athletes.</p>
+      </section>
+      <nav aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h3>Contact</h3>
+        <p><a href="tel:5551234567">(555) 123-4567</a><br><a href="mailto:info@gentlegianttraining.com">info@gentlegianttraining.com</a><br>1500 Championship Drive, Columbus, OH</p>
+      </section>
+      <section>
+        <h3>Follow Us</h3>
+        <ul class="social-list" aria-label="Social media links">
+          <li><a href="#" aria-label="Instagram">IG</a></li>
+          <li><a href="#" aria-label="Facebook">FB</a></li>
+          <li><a href="#" aria-label="YouTube">YT</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container copyright">
+      <small>&copy; 2026 Gentle Giant Training. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="javascript/main.js"></script>
+</body>
+</html>
