@@ -1,17 +1,30 @@
 :root {
+<<<<<<< HEAD
 <<<<<<< ours
   --primary: #182a3a;
   --secondary: #425b6f;
   --accent: #d6bb80;
   --accent-dark: #a08348;
+=======
+  --navy-950: #08111c;
+  --navy-900: #102238;
+  --navy-800: #183552;
+  --navy-700: #23486e;
+  --sand-100: #f6f0e4;
+  --sand-200: #ebdec0;
+  --gold-400: #d5b36a;
+  --gold-500: #c79a3d;
+  --gold-600: #a97c28;
+  --rust-500: #b95632;
+>>>>>>> parent of 4a68dcb (fixes the colours)
   --white: #ffffff;
   --ink: #15263a;
   --muted: #5b6878;
-  --surface: #f8f8f6;
+  --surface: #fffdfa;
   --surface-strong: #f4efe4;
-  --border: rgba(24, 42, 58, 0.16);
-  --shadow-soft: 0 20px 50px rgba(24, 42, 58, 0.14);
-  --shadow-card: 0 16px 36px rgba(24, 42, 58, 0.1);
+  --border: rgba(16, 34, 56, 0.12);
+  --shadow-soft: 0 20px 50px rgba(8, 17, 28, 0.12);
+  --shadow-card: 0 16px 36px rgba(8, 17, 28, 0.1);
   --radius-sm: 0.85rem;
   --radius-md: 1.4rem;
   --radius-lg: 2rem;
@@ -50,7 +63,9 @@ body {
 <<<<<<< ours
   margin: 0;
   font-family: "Manrope", sans-serif;
-  background: var(--primary);
+  background:
+    radial-gradient(circle at top, rgba(213, 179, 106, 0.22), transparent 32%),
+    linear-gradient(180deg, #fcfaf4 0%, #f3ede2 100%);
   color: var(--ink);
 =======
   /* This sets up the main font and base page colours. */
@@ -91,15 +106,19 @@ a {
 }
 
 a:hover {
-  color: var(--accent-dark);
+  color: var(--gold-600);
 }
 
 :focus-visible {
+<<<<<<< HEAD
 <<<<<<< ours
 =======
   /* This makes keyboard focus easier to see. */
 >>>>>>> theirs
   outline: 3px solid var(--accent-dark);
+=======
+  outline: 3px solid var(--rust-500);
+>>>>>>> parent of 4a68dcb (fixes the colours)
   outline-offset: 3px;
 }
 
@@ -131,7 +150,7 @@ a:hover {
 <<<<<<< ours
   padding: 0.8rem 1rem;
   background: var(--white);
-  color: var(--primary);
+  color: var(--navy-900);
   border-radius: 999px;
   text-decoration: none;
   box-shadow: var(--shadow-soft);
@@ -154,7 +173,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(24, 42, 58, 0.92);
+  background: rgba(8, 17, 28, 0.82);
   backdrop-filter: blur(16px);
 =======
   /* This keeps the menu at the top while scrolling. */
@@ -313,7 +332,7 @@ a:hover {
 <<<<<<< ours
   display: none;
   padding: 0.6rem 1rem 1rem;
-  background: rgba(24, 42, 58, 0.98);
+  background: rgba(8, 17, 28, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 =======
   background: var(--primary);
@@ -357,8 +376,8 @@ a:hover {
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--primary);
-  background: var(--accent);
+  color: var(--navy-950);
+  background: linear-gradient(135deg, var(--gold-400), var(--sand-200));
   font-weight: 800;
 =======
   padding: 0.75rem 0;
@@ -376,8 +395,14 @@ a:hover {
 .hero,
 .hero-banner,
 .band-accent {
+<<<<<<< HEAD
 <<<<<<< ours
   background: var(--accent);
+=======
+  background:
+    linear-gradient(135deg, rgba(213, 179, 106, 0.96), rgba(246, 240, 228, 0.98)),
+    var(--sand-100);
+>>>>>>> parent of 4a68dcb (fixes the colours)
 }
 
 .hero {
@@ -391,7 +416,7 @@ a:hover {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 15% 15%, rgba(160, 131, 72, 0.18), transparent 18%),
+    radial-gradient(circle at 15% 15%, rgba(185, 86, 50, 0.2), transparent 18%),
     linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
     linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
   background-size: auto, 2.4rem 2.4rem, 2.4rem 2.4rem;
@@ -407,6 +432,7 @@ a:hover {
 }
 
 .band-dark {
+<<<<<<< HEAD
 =======
   /* Gold sections use the accent colour from the palette. */
   background: var(--accent);
@@ -416,6 +442,11 @@ a:hover {
   /* Dark sections use the blue-gray colour. */
 >>>>>>> theirs
   background: var(--secondary);
+=======
+  background:
+    linear-gradient(180deg, rgba(16, 34, 56, 0.98), rgba(8, 17, 28, 0.98)),
+    var(--navy-900);
+>>>>>>> parent of 4a68dcb (fixes the colours)
   color: var(--white);
 }
 
@@ -433,8 +464,14 @@ a:hover {
 }
 
 .footer {
+<<<<<<< HEAD
   background: var(--primary);
 <<<<<<< ours
+=======
+  background:
+    radial-gradient(circle at top, rgba(213, 179, 106, 0.12), transparent 22%),
+    var(--navy-950);
+>>>>>>> parent of 4a68dcb (fixes the colours)
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -464,11 +501,12 @@ a:hover {
   margin-bottom: 0.8rem;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: rgba(24, 42, 58, 0.08);
+  background: rgba(16, 34, 56, 0.08);
   font-size: 0.74rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.18em;
+<<<<<<< HEAD
   color: var(--secondary);
 =======
   margin-bottom: 0.6rem;
@@ -478,6 +516,9 @@ a:hover {
   letter-spacing: 0.12em;
   color: var(--accent-dark);
 >>>>>>> theirs
+=======
+  color: var(--navy-800);
+>>>>>>> parent of 4a68dcb (fixes the colours)
 }
 
 h1,
@@ -595,7 +636,7 @@ h3 {
 
 .band-accent .section-intro,
 .band-accent .section-title {
-  color: var(--primary);
+  color: var(--navy-900);
 }
 
 .band-accent p,
@@ -626,12 +667,12 @@ summary {
   padding: 0.92rem 1.4rem;
   border: 1px solid transparent;
   border-radius: 999px;
-  background: var(--secondary);
+  background: linear-gradient(135deg, var(--rust-500), #d0714d);
   color: var(--white);
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 0.02em;
-  box-shadow: 0 14px 28px rgba(24, 42, 58, 0.22);
+  box-shadow: 0 14px 28px rgba(185, 86, 50, 0.24);
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 =======
   /* This is the main button style used across the site. */
@@ -655,6 +696,7 @@ summary {
 <<<<<<< ours
   color: var(--white);
   transform: translateY(-2px);
+<<<<<<< HEAD
   background: var(--primary);
   box-shadow: 0 18px 34px rgba(24, 42, 58, 0.28);
   filter: none;
@@ -681,6 +723,15 @@ summary {
   color: var(--white);
 <<<<<<< ours
   box-shadow: 0 18px 34px rgba(160, 131, 72, 0.28);
+=======
+  box-shadow: 0 18px 34px rgba(185, 86, 50, 0.3);
+  filter: saturate(1.05);
+}
+
+.button-secondary {
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-900));
+  box-shadow: 0 14px 28px rgba(16, 34, 56, 0.28);
+>>>>>>> parent of 4a68dcb (fixes the colours)
 }
 
 .card-grid,
@@ -758,8 +809,8 @@ summary {
   place-items: center;
   margin-bottom: 0.8rem;
   border-radius: 50%;
-  background: rgba(214, 187, 128, 0.24);
-  color: var(--accent-dark);
+  background: linear-gradient(135deg, rgba(213, 179, 106, 0.24), rgba(185, 86, 50, 0.18));
+  color: var(--navy-900);
   font-size: 0.95rem;
   font-weight: 800;
 }
@@ -813,7 +864,7 @@ summary {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(2.5rem, 6vw, 3.7rem);
   line-height: 1;
-  color: var(--primary);
+  color: var(--navy-900);
 }
 
 .stat span {
@@ -846,7 +897,7 @@ summary {
   min-height: 19rem;
   padding: 0.55rem;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.22));
   box-shadow: var(--shadow-soft);
 }
 
@@ -987,7 +1038,7 @@ summary {
 <<<<<<< ours
   min-height: 4rem;
   border-radius: 1.1rem;
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--gold-500), var(--rust-500));
   color: var(--white);
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.45rem;
@@ -1101,12 +1152,17 @@ summary {
 .pricing-card.featured {
 <<<<<<< ours
   background: linear-gradient(180deg, rgba(255, 248, 232, 0.98), rgba(250, 238, 210, 0.98));
+<<<<<<< HEAD
   border-color: rgba(160, 131, 72, 0.45);
   box-shadow: 0 20px 42px rgba(160, 131, 72, 0.18);
 =======
   border-color: rgba(160, 131, 72, 0.6);
   box-shadow: 0 10px 22px rgba(160, 131, 72, 0.18);
 >>>>>>> theirs
+=======
+  border-color: rgba(199, 154, 61, 0.38);
+  box-shadow: 0 20px 42px rgba(169, 124, 40, 0.18);
+>>>>>>> parent of 4a68dcb (fixes the colours)
 }
 
 .price {
@@ -1175,8 +1231,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: rgba(160, 131, 72, 0.62);
-  box-shadow: 0 0 0 4px rgba(160, 131, 72, 0.14);
+  border-color: rgba(185, 86, 50, 0.62);
+  box-shadow: 0 0 0 4px rgba(185, 86, 50, 0.14);
   outline: none;
 =======
   padding: 0.8rem 0.9rem;
